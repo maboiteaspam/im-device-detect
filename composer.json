@@ -1,0 +1,29 @@
+{
+    "name": "im/device-detect",
+    "description": "Implemented - Standard Device Detection Interface for PHP",
+    "type": "im",
+    "license": "WTF",
+    "authors": [
+        {
+            "name": "maboiteaspam",
+            "email": "no@where.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "st/device-detect": "v1.0.1",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "psr/http-message": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:maboiteaspam/st-device-detect.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "im\\": "src/im"
+        }
+    }
+}
