@@ -67,6 +67,9 @@ class MobileDetect implements DeviceDetectorInterface {
     }
 
     public function isDeviceType($deviceType) {
+        $negate = substr($deviceType,0,1)==='!';
+        $deviceType = $negate ? substr($deviceType,1) : $deviceType;
+        if ($negate) return !($this->detect()===$deviceType);
         return $this->detect()===$deviceType;
     }
 }
