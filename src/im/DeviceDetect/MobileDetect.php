@@ -9,7 +9,7 @@
  */
 namespace im\DeviceDetect;
 
-use \st\DeViceDetect\DeviceDetectorInterface;
+use \st\DeviceDetect\DeviceDetectorInterface;
 use \Psr\Http\Message\RequestInterface;
 use \Mobile_Detect;
 
